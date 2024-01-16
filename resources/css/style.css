@@ -3,6 +3,7 @@
     overflow: hidden;
     position: fixed;
     top: 0;
+    left: 10px;
     width: auto;
     text-align: center;
     display: block;
@@ -11,15 +12,27 @@
     transition:
         transform 1s ease;
 }
+.navtitle {
+    border : #333 solid 10px;
+}
 .navoption {
     width: 100%;
-    color: #f2f2f2;
+    color: #ddd;
     background-color: black;
     text-align: center;
     font-size: 17px;
     margin:auto;
     padding: 20px 0px;
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+.minimise {
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 0px;
+    transform: rotate(0deg);
+    transition: transform 1s ease;
 }
 .navoption:hover {
     background-color: #ddd;
@@ -37,15 +50,6 @@ a:link {
   a:active { 
     text-decoration: none; 
   }
-.minimise {
-    cursor: pointer;
-    color: white;
-    width: 210px;
-    font-size: 17px;
-    padding: 10px 0px;
-    transform: rotate(0deg);
-    transition: transform 1s ease;
-}
 .flip {
     transform: rotate(180deg);
 }
@@ -54,19 +58,63 @@ a:link {
 }
 
 .content {
-    text-align: center;
-    width: 50%;
+    text-align: left;
+    width: 55%;
+    border-width: 5vh 10vh;
+    border-style: solid ;
+    border-color: #333;
+
     margin: 0 auto;
+    background-color: #333;
+    color: #ddd;
+    min-height: 100vh;
 }
 .portrait {
     width: 160px;
     height: auto;
     border-radius: 50%;
     border-style: solid;
-    border-color: #ff0000;
+    border-color: #ddd;
     border-width: 5px;
     margin: 25px;
+}
+.shelf {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    width: 100%;
+    text-align: left;
+}
+.project {
+    border: 10px solid black;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background-color: black;
+    color: #f2f2f2;
+    margin: 10px;
+    transition: 
+        width 0.5s ease,
+        height 0.5s ease,
+        margin 0.5s ease;
+}
+.project:hover {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: 0px;
+}
+.projectscreenshot {
+    width: 100%;
+    height: auto;
 }
 html {
     scroll-behavior: smooth;
   }
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #ddd;
+}
+hr{
+    color: #ddd;
+}

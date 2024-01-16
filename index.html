@@ -6,20 +6,27 @@
 <body>
     <div id="navigation" class="navigation">
         <img src="resources/images/me.jpg" alt="Image of me" class="portrait">
-        <h2> Yi-Chen's Website</h2>
-        <a href="#home">
+        <div class ="navtitle">
+            <h2> Yi-Chen's Website</h2>
+        </div>
+        <a href="#aboutsection">
             <div  class="navoption">
-                Home
+                About Me
             </div>
         </a>
-        <a href="#about">
+        <a href="#projectssection">
             <div  class="navoption">
-            About
+            Projects
         </div>
         </a>
-        <a href="#contact">
+        <a href="#contactsection">
             <div class="navoption">
                 Contact
+            </div>
+        </a>
+        <a href="resources/pdf/Yi-Chen_Hsiao_CV.pdf" target="_blank">
+            <div class="navoption">
+                My CV
             </div>
         </a>
         <div id="minimise" class="minimise">
@@ -28,21 +35,56 @@
         <script src="resources/javascript/navigation.js"></script>
     </div>
 
-
     <div class ="content">
-        <div class="home" id="home">
-            <h1>Home</h1>
+        <div class="aboutsection" id="aboutsection">
+            <h1>About me</h1>
             <p>
-               
+                Hello, my name is Yi-Chen Hsiao. I am a student at the University of Auckland studying Part II Software Engineering.<br/>
+                I am confident in Java, Python, and C, and have experience with HTML, and CSS.
             </p>
         </div>
-        <div class="about" id="about">
-            <h1>About</h1>
-            
+
+        <hr>
+
+        <div class="projectssection" id="projectssection">
+            <h1>Projects</h1>
+            <p>
+                Here are some of my projects. Click on the images to go to the github repository.
+            </p>
+            <div class="shelf">
+                
+                    <div class="project">
+                        <a href="https://github.com/yichenhsiaonz/EscAIpe-room-final" target="_blank">
+                            <img src="resources/images/screenshots/aigame.png" class="projectscreenshot"/>
+                        </a>
+                        <h3>EscAIpe room</h3>
+                        <p>
+                            This is a point-and-click adventure game created collaboratively with a group of 3.<br/><br/>
+                            Written in Java using the JavaFX library.<br/><br/>
+                            Incorporates OpenAI's ChatGPT through a provided API wrapper.
+                        </p>
+                    </div>
+                
+                    <div class="project">
+                        <a href="https://github.com/yichenhsiaonz/shortcutcleaner" target="_blank">
+                            <img src="resources/images/screenshots/shortcutcleaner.png" class="projectscreenshot"/>
+                        </a>
+                        <h3>shortcutcleaner</h3>
+                        <p>
+                            A basic javafx app for Windows to scan desktop for dead shortcuts (shortcuts with original file missing)<br/><br/>
+                            Written in Java using the JavaFX library and the mslinks library by Dmitrii Shamrikov.
+                        </p>
+                        </div>
+            </div>
         </div>
-        <div class="contact" id="contact">
+
+        <script src="resources/javascript/projects.js"></script>
+
+        <hr>
+
+        <div class="contactsection" id="contactsection">
             <h1>Contact</h1>
-            
+            <p>Email me at hsiaoyichen77@gmail.com</p>
         </div>
     </div>
     
