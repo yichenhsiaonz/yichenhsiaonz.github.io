@@ -14,6 +14,7 @@
 }
 .navtitle {
     border : #333 solid 10px;
+    color: #ddd;
 }
 .navoption {
     width: 100%;
@@ -60,14 +61,13 @@ a:link {
 .content {
     text-align: left;
     width: 55%;
-    border-width: 5vh 10vh;
+    border-width: 5vh 5vh;
     border-style: solid ;
     border-color: #333;
 
-    margin: 0 auto;
+    margin: 5vh auto 0 auto;
     background-color: #333;
     color: #ddd;
-    min-height: 100vh;
 }
 .portrait {
     width: 160px;
@@ -114,6 +114,11 @@ body {
     margin: 0;
     font-family: Verdana, sans-serif;
     background-color: #ddd;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 hr{
     color: #ddd;
