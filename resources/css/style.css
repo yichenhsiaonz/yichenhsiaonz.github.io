@@ -1,10 +1,29 @@
-.navigation {
+@media (max-width: 1450px) {
+    .navigation  {
+        width: 100%;
+    }
+    .content {
+        margin: calc(5vh + 43px) auto 0 auto;
+        width: 80%;
+    }
+}
+
+@media not (max-width: 1450px) {
+    .navigation  {
+        left: 10px;
+        width: auto;
+    }
+    .content {
+        margin: 5vh auto 0 auto;
+        width: 55%;
+    }
+}
+
+.navigation  {
     background-color: #333;
     overflow: hidden;
     position: fixed;
     top: 0;
-    left: 10px;
-    width: auto;
     text-align: center;
     display: block;
     height: auto;
@@ -12,6 +31,7 @@
     transition:
         transform 1s ease;
 }
+
 .navtitle {
     border : #333 solid 10px;
     color: #ddd;
@@ -60,12 +80,9 @@ a:link {
 
 .content {
     text-align: left;
-    width: 55%;
     border-width: 5vh 5vh;
     border-style: solid ;
     border-color: #333;
-
-    margin: 5vh auto 0 auto;
     background-color: #333;
     color: #ddd;
 }
