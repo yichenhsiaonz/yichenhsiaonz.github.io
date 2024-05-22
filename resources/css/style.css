@@ -60,17 +60,32 @@
     color: black;
 }
 a:link { 
-    text-decoration: none; 
+    color: white;
   } 
-  a:visited { 
-    text-decoration: none; 
+a:visited { 
+    color: white;
   } 
-  a:hover { 
-    text-decoration: none; 
+a:hover { 
+    color: lightblue;
   } 
-  a:active { 
-    text-decoration: none; 
-  }
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+
+}
+.navigation a:hover {
+    text-decoration: none;
+    color: white;
+}
+.navigation a:visited {
+    text-decoration: none;
+    color: white;
+}
+.navigation a:active {
+    text-decoration: none;
+    color: white;
+}
 .flip {
     transform: rotate(180deg);
 }
@@ -110,10 +125,8 @@ a:link {
     background-color: black;
     color: #f2f2f2;
     margin: 10px;
-    transition: 
-        width 0.5s ease,
-        height 0.5s ease,
-        margin 0.5s ease;
+    transition:
+    0.5s ease;
 }
 .project:hover {
     width: calc(100% - 20px);
@@ -123,6 +136,14 @@ a:link {
 .projectscreenshot {
     width: 100%;
     height: auto;
+}
+.project p{
+    width: 100%;
+    transition:
+    0.5s ease;
+}
+.project:hover p{
+    width: calc(100% - 20px);
 }
 html {
     scroll-behavior: smooth;
